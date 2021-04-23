@@ -1,0 +1,561 @@
+<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Fri Apr 23 2021 12:08:19 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6061dae9c6ef7261bf2d3d7c" data-wf-site="6048e4f9eb6b25b9d8ad487c">
+<head>
+  <meta charset="utf-8">
+  <title>Map</title>
+  <meta content="Map" property="og:title">
+  <meta content="Map" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/hyperpop.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.jpg" rel="apple-touch-icon">
+</head>
+<body data-w-id="604d2020a837d37b74ec4479" class="body">
+  <div data-w-id="f0966cfb-6e3f-e3d5-a163-6d926a362fde" style="opacity:0" class="div-for-map w-clearfix">
+    <div data-w-id="dd0e168d-cb4e-56d7-b9b8-c471ec227e11" class="horiztonal-lines-container">
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+      <div class="horizontal-lines-map"></div>
+    </div>
+    <div class="div-block-43"><img src="images/Grid-Lines-01-WARPED.png" loading="lazy" sizes="100vw" srcset="images/Grid-Lines-01-WARPED-p-500.png 500w, images/Grid-Lines-01-WARPED-p-800.png 800w, images/Grid-Lines-01-WARPED-p-1080.png 1080w, images/Grid-Lines-01-WARPED-p-1600.png 1600w, images/Grid-Lines-01-WARPED-p-2000.png 2000w, images/Grid-Lines-01-WARPED-p-2600.png 2600w, images/Grid-Lines-01-WARPED-p-3200.png 3200w, images/Grid-Lines-01-WARPED.png 7134w" alt="" class="vertical_lines_png-map"></div>
+    <div data-collapse="medium" data-animation="over-right" data-duration="400" role="banner" class="navbar w-nav">
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="about.html" class="nav-link w-nav-link">about</a>
+        <a href="map.html" aria-current="page" class="nav-link w-nav-link w--current">map</a>
+        <a href="tracklist.html" class="nav-link w-nav-link">tracklist</a>
+      </nav>
+      <div class="container w-container">
+        <a href="index.html" class="brand w-nav-brand"><img src="images/Logo_Outline_Ultra-copy.png" loading="lazy" width="275" sizes="(max-width: 479px) 58vw, (max-width: 991px) 275px, (max-width: 1919px) 24vw, 275px" srcset="images/Logo_Outline_Ultra-copy-p-500.png 500w, images/Logo_Outline_Ultra-copy-p-800.png 800w, images/Logo_Outline_Ultra-copy-p-1080.png 1080w, images/Logo_Outline_Ultra-copy-p-1600.png 1600w, images/Logo_Outline_Ultra-copy-p-2000.png 2000w, images/Logo_Outline_Ultra-copy.png 2264w" alt="Logo, Home Page Redirect" class="logo"></a>
+        <div class="menu-button w-nav-button">
+          <div class="icon w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="e12c6196-bdbf-e50a-dece-3a30962ac9c7" class="volume-on-off-btn"><img src="images/volume_off.png" loading="lazy" width="25" data-w-id="e12c6196-bdbf-e50a-dece-3a30962ac9ca" alt="" class="volume-map"><img src="images/volume_on.png" loading="lazy" width="25" data-w-id="e12c6196-bdbf-e50a-dece-3a30962ac9cb" alt="" class="volume-on-map"></div>
+    <div class="sub-genre">
+      <div data-w-id="a4076b06-9901-da66-2bbf-6adfa4ea1d95" class="genre-tag bubbly">Bubbly</div>
+      <div data-w-id="96a05c24-b598-53f2-129b-0fc748520bac" style="opacity:0" class="genre-tag bubbly glow">Bubbly</div>
+    </div>
+    <div class="sub-genre w-clearfix">
+      <div data-w-id="b531688c-1c6a-a43c-f3a9-8a2b9d4cdf2c" class="genre-tag glossy">GLOSSY</div>
+      <div data-w-id="21b4688d-dd51-2ff5-4137-f3a9fa950b9f" style="opacity:0" class="genre-tag glossy glow">GLOSSY</div>
+      <div data-w-id="47bc12cd-890c-2c3a-7ba2-38169011829a" class="genre-tag glitchy">GLITCHY</div>
+      <div data-w-id="d0763021-532b-93ea-e928-3ccd4bf1b942" style="opacity:0" class="genre-tag glitchy glow">GLITCHY</div>
+    </div>
+    <div class="sub-genre">
+      <div data-w-id="bbeba15e-088c-85d7-bba3-99fd38ab9c4e" class="genre-tag moody">MOODY</div>
+      <div data-w-id="8eb74f7f-2e2e-cc8a-2db0-6272258318c0" style="opacity:0" class="genre-tag moody glow">MOODY</div>
+    </div>
+    <div class="genre-tag bubbly-mobile">Bubbly</div>
+    <div class="genre-tag glossy-mobile">GLOSSY</div>
+    <div class="genre-tag glitchy-mobile">GLITCHY</div>
+    <div class="genre-tag moody-mobile">MOODY</div>
+  </div>
+  <div class="x-axis"></div>
+  <div class="y-axis"></div>
+  <div data-w-id="f8951b1a-5e5b-e4a0-b469-11fba843b439" style="opacity:0" class="w-layout-grid grid-of-albums mobile">
+    <div id="w-node-ff191729-1ab5-01e2-8d6f-2f11992f332a-bf2d3d7c" data-w-id="ff191729-1ab5-01e2-8d6f-2f11992f332a" style="-webkit-transform:translate3d(-56px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-56px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-56px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-56px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-gecs quarter-1" id="GecsBtn">
+      <a href="100-gecs.html" class="w-inline-block"><img src="images/100-Gecs-Remix.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 1136px) 88vw, 1000px" srcset="images/100-Gecs-Remix-p-500.jpeg 500w, images/100-Gecs-Remix-p-800.jpeg 800w, images/100-Gecs-Remix.jpg 1000w" alt="" class="album-glow glitchy" id="GecsBtn"></a>
+    </div>
+    <div id="w-node-_4e766096-0f85-68d5-e853-1d93419f1dc7-bf2d3d7c" data-w-id="4e766096-0f85-68d5-e853-1d93419f1dc7" style="-webkit-transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-p4rkr quarter-1" id="P4rkrBtn">
+      <a href="p4rkr.html" class="w-inline-block"><img src="images/p4rkr-ok-im-cool.jpg" loading="lazy" alt="" class="album-glow" id="P4rkrBtn"></a>
+    </div>
+    <div id="w-node-ffdc559c-90bd-6e66-22b6-840d783b8df3-bf2d3d7c" data-w-id="ffdc559c-90bd-6e66-22b6-840d783b8df3" style="-webkit-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-glaive" id="GlaiveBtn">
+      <a href="glaive.html" class="w-inline-block"><img src="images/Glaive-Pissed.jpeg" loading="lazy" alt="" class="album-glow" id="GlaiveBtn"></a>
+    </div>
+    <div id="w-node-_2849c4c6-291c-51aa-a848-f9c5dc7af121-bf2d3d7c" data-w-id="2849c4c6-291c-51aa-a848-f9c5dc7af121" style="-webkit-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-cmten quarter-1" id="CMTENBtn">
+      <a href="cmten.html" class="w-inline-block"><img src="images/CMTEN-Never-Met.jpeg" loading="lazy" width="100" sizes="(max-width: 479px) 100vw, 100px" srcset="images/CMTEN-Never-Met-p-500.jpeg 500w, images/CMTEN-Never-Met-p-800.jpeg 800w, images/CMTEN-Never-Met-p-1080.jpeg 1080w, images/CMTEN-Never-Met.jpeg 1200w" alt="" class="album-glow" id="CMTENBtn"></a>
+    </div>
+    <div id="w-node-_13d0d1c9-c05b-1ea6-8a9e-1c4c70f3a306-bf2d3d7c" data-w-id="13d0d1c9-c05b-1ea6-8a9e-1c4c70f3a306" style="-webkit-transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-rico quarter-1" id="RicoBtn">
+      <a href="rico-nasty.html" class="w-inline-block"><img src="images/Rico-Nasty-iPhone.jpeg" loading="lazy" alt="" class="album-glow" id="RicoBtn"></a>
+    </div>
+    <div id="w-node-bced098b-c880-02b7-4deb-00aae91bc1ee-bf2d3d7c" data-w-id="bced098b-c880-02b7-4deb-00aae91bc1ee" style="-webkit-transform:translate3d(-89px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-89px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-89px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-89px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-gfoty quarter-1" id="GFOTYBtn">
+      <a href="gfoty.html" class="w-inline-block"><img src="images/GFOTY-Bucks.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 1919px) 88vw, 896px" srcset="images/GFOTY-Bucks-p-500.jpeg 500w, images/GFOTY-Bucks-p-800.jpeg 800w, images/GFOTY-Bucks.jpg 896w" alt="" class="album-glow" id="GFOTYBtn"></a>
+    </div>
+    <div id="w-node-_034c3a17-efb8-0282-c655-3c66c2618b7e-bf2d3d7c" data-w-id="034c3a17-efb8-0282-c655-3c66c2618b7e" style="-webkit-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-153px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-easyfun" id="EASYFUNBtn">
+      <a href="easyfun.html" class="w-inline-block"><img src="images/EasyFUN-Be-Your-USA.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 1919px) 88vw, 960px" srcset="images/EasyFUN-Be-Your-USA-p-500.jpeg 500w, images/EasyFUN-Be-Your-USA-p-800.jpeg 800w, images/EasyFUN-Be-Your-USA.jpg 960w" alt="" class="album-glow" id="EASYFUNBtn"></a>
+    </div>
+    <div id="w-node-_60c73abb-116b-f8e3-257f-5f903f35e223-bf2d3d7c" data-w-id="60c73abb-116b-f8e3-257f-5f903f35e223" class="div-namasenda" id="NamasendaBtn">
+      <a href="namasenda.html" class="w-inline-block"><img src="images/Namsenda-Wanted.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 1136px) 88vw, 1000px" srcset="images/Namsenda-Wanted-p-500.jpeg 500w, images/Namsenda-Wanted-p-800.jpeg 800w, images/Namsenda-Wanted.jpg 1000w" alt="" class="album-glow" id="NamasendaBtn"></a>
+    </div>
+    <div id="w-node-d6a6dee3-fad0-9506-ee11-80638c49c177-bf2d3d7c" data-w-id="d6a6dee3-fad0-9506-ee11-80638c49c177" style="-webkit-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-regina" id="KyunchiBtn">
+      <a href="kyunchi.html" class="w-inline-block"><img src="images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica.jpg" loading="lazy" width="93" sizes="(max-width: 479px) 100vw, 93px" srcset="images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica-p-500.jpeg 500w, images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica-p-800.jpeg 800w, images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica.jpg 1000w" alt="" class="album-glow" id="KyunchiBtn"></a>
+    </div>
+    <div id="w-node-e6e27ed6-b695-e86e-5685-29b4d0959f80-bf2d3d7c" data-w-id="e6e27ed6-b695-e86e-5685-29b4d0959f80" style="-webkit-transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-qt" id="QTBtn">
+      <a href="qt.html" class="w-inline-block"><img src="images/QT-Hey-QT.jpg" loading="lazy" alt="" class="album-glow" id="QTBtn"></a>
+    </div>
+    <div id="w-node-f0a13642-957f-af09-ee2d-12b495b91760-bf2d3d7c" data-w-id="f0a13642-957f-af09-ee2d-12b495b91760" class="div-planet" id="PlanetBtn">
+      <a href="planet-1999.html" class="w-inline-block"><img src="images/Planet-1999-Replay.jpg" loading="lazy" width="97" data-w-id="f0a13642-957f-af09-ee2d-12b495b91761" srcset="images/Planet-1999-Replay-p-500.jpeg 500w, images/Planet-1999-Replay-p-800.jpeg 800w, images/Planet-1999-Replay.jpg 1000w" sizes="(max-width: 479px) 100vw, 97px" alt="" class="album-glow" id="PlanetBtn"></a>
+    </div>
+    <div id="w-node-c9777a7e-6214-99c5-10da-6ce32f7b87e2-bf2d3d7c" data-w-id="c9777a7e-6214-99c5-10da-6ce32f7b87e2" class="div-charli" id="ClawsBtn">
+      <a href="charli-xcx.html" class="link-block-2 w-inline-block">
+        <div class="div-block-40"></div>
+      </a>
+      <a href="charli-xcx.html" class="w-inline-block"><img src="images/Charli-Charli.png" loading="lazy" alt="" class="album-glow" id="ClawsBtn"></a>
+    </div>
+    <div id="w-node-cb759864-ec7f-32c9-8b46-53993e08cb5b-bf2d3d7c" data-w-id="cb759864-ec7f-32c9-8b46-53993e08cb5b" style="-webkit-transform:translate3d(-129px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-129px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-129px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-129px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-sophie" id="SOPHIEBtn">
+      <a href="sophie.html" class="w-inline-block"><img src="images/Sophie-Immaterial.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 87vw, (max-width: 1136px) 88vw, 1000px" srcset="images/Sophie-Immaterial-p-500.jpeg 500w, images/Sophie-Immaterial-p-800.jpeg 800w, images/Sophie-Immaterial.jpg 1000w" alt="" class="album-glow" id="SOPHIEBtn"></a>
+    </div>
+    <div id="w-node-_928b61c3-85a6-0883-ccb2-570bb48e4f63-bf2d3d7c" data-w-id="928b61c3-85a6-0883-ccb2-570bb48e4f63" style="-webkit-transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(210px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-liz" id="LIZBtn">
+      <a href="liz.html" class="w-inline-block"><img src="images/LIZ-When-I-Rule-The-World.jpg" loading="lazy" alt="" class="album-glow" id="LIZBtn"></a>
+    </div>
+    <div id="w-node-_643750bd-3967-27e5-87c2-b3f8517e8aff-bf2d3d7c" data-w-id="643750bd-3967-27e5-87c2-b3f8517e8aff" style="-webkit-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-slayyyter" id="SlayyyterBtn">
+      <a href="slayyyter.html" class="w-inline-block"><img src="images/Slayyyter-Mine.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 735px) 87vw, 640px" srcset="images/Slayyyter-Mine-p-500.jpeg 500w, images/Slayyyter-Mine.jpg 640w" alt="" class="album-glow" id="SlayyyterBtn"></a>
+    </div>
+    <div id="w-node-daf41b29-4839-a1cf-48ba-f120762eef9f-bf2d3d7c" data-w-id="daf41b29-4839-a1cf-48ba-f120762eef9f" style="-webkit-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(113px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-shygirl" id="ShygirlBtn">
+      <a href="shygirl.html" class="w-inline-block"><img src="images/Shygirl-SLIME.png" loading="lazy" width="121" sizes="(max-width: 479px) 100vw, 121px" srcset="images/Shygirl-SLIME-p-500.png 500w, images/Shygirl-SLIME-p-800.png 800w, images/Shygirl-SLIME.png 858w" alt="" class="album-glow" id="ShygirlBtn"></a>
+    </div>
+    <div id="w-node-_1c2bd314-9006-f0af-6947-3e3bb8c9cf04-bf2d3d7c" data-w-id="1c2bd314-9006-f0af-6947-3e3bb8c9cf04" class="div-sega" id="SegaBtn">
+      <a href="sega-bodega.html" class="w-inline-block"><img src="images/Sega-Bodega-Salvador.jpg" loading="lazy" width="105" sizes="(max-width: 479px) 100vw, 105px" srcset="images/Sega-Bodega-Salvador-p-500.jpeg 500w, images/Sega-Bodega-Salvador.jpg 600w" alt="" class="album-glow" id="SegaBtn"></a>
+    </div>
+    <div id="w-node-ddf9ee67-c4fb-1bda-fb8e-176b3cb10010-bf2d3d7c" data-w-id="ddf9ee67-c4fb-1bda-fb8e-176b3cb10010" style="-webkit-transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-oklou" id="OklouBtn">
+      <a href="oklou.html" class="w-inline-block"><img src="images/Oklou-Unearth-Me.jpeg" loading="lazy" width="105" alt="" class="album-glow" id="OklouBtn"></a>
+    </div>
+    <div id="w-node-_4d5fb2a1-4756-f68a-489c-5225d8362388-bf2d3d7c" data-w-id="4d5fb2a1-4756-f68a-489c-5225d8362388" class="div-danny" id="DannyBtn">
+      <a href="danny-l-harle.html" class="w-inline-block"><img src="images/Danny-Mountain.jpeg" loading="lazy" width="105" alt="" class="album-glow" id="DannyBtn"></a>
+    </div>
+    <div id="w-node-_569659a1-e741-034a-a167-aa7376981cd4-bf2d3d7c" data-w-id="569659a1-e741-034a-a167-aa7376981cd4" class="div-silver" id="AGCookBtn">
+      <a href="ag-cook.html" class="w-inline-block"><img src="images/A.G.-Cook-Silver.jpg" loading="lazy" width="158" sizes="(max-width: 479px) 100vw, 158px" srcset="images/A.G.-Cook-Silver-p-500.jpeg 500w, images/A.G.-Cook-Silver-p-800.jpeg 800w, images/A.G.-Cook-Silver.jpg 1000w" alt="" class="album-glow" id="AGCookBtn"></a>
+    </div>
+    <div id="w-node-_7a266bf9-ac9e-6d38-d625-d492f7d07fc2-bf2d3d7c" data-w-id="7a266bf9-ac9e-6d38-d625-d492f7d07fc2" style="-webkit-transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(266px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="div-hannah" id="HannahBtn">
+      <a href="hannah-diamond.html" class="w-inline-block"><img src="images/Hannah-Diamond-Reflections.png" loading="lazy" width="105" alt="" class="album-glow" id="HannahBtn"></a>
+    </div>
+  </div>
+  <div data-w-id="c0ff3e59-3737-115c-c996-a7606652453a" class="w-layout-grid grid-of-albums mobile-grid-of-albums">
+    <div id="w-node-c0ff3e59-3737-115c-c996-a7606652453b-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a7606652453b" class="div-gecs-mobile quarter-1">
+      <a href="100-gecs.html" class="w-inline-block"><img src="images/100-Gecs-Remix.jpg" loading="lazy" width="60" sizes="(max-width: 479px) 23px, 100vw" srcset="images/100-Gecs-Remix-p-500.jpeg 500w, images/100-Gecs-Remix-p-800.jpeg 800w, images/100-Gecs-Remix.jpg 1000w" alt="" class="album-glow glitchy"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a7606652453e-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a7606652453e" class="div-p4rkr-mobile quarter-1">
+      <a href="p4rkr.html" class="w-inline-block"><img src="images/p4rkr-ok-im-cool.jpg" loading="lazy" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524541-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524541" class="div-glaive-mobile">
+      <a href="glaive.html" class="w-inline-block"><img src="images/Glaive-Pissed.jpeg" loading="lazy" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524544-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524544" class="div-cmten-mobile quarter-1">
+      <a href="cmten.html" class="w-inline-block"><img src="images/CMTEN-Never-Met.jpeg" loading="lazy" width="100" sizes="(max-width: 479px) 23px, 100vw" srcset="images/CMTEN-Never-Met-p-500.jpeg 500w, images/CMTEN-Never-Met-p-800.jpeg 800w, images/CMTEN-Never-Met-p-1080.jpeg 1080w, images/CMTEN-Never-Met.jpeg 1200w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524547-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524547" class="div-rico-mobile quarter-1">
+      <a href="rico-nasty.html" class="w-inline-block"><img src="images/Rico-Nasty-iPhone.jpeg" loading="lazy" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a7606652454a-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a7606652454a" class="div-gfoty-mobile quarter-1">
+      <a href="gfoty.html" class="w-inline-block"><img src="images/GFOTY-Bucks.jpg" loading="lazy" width="69" sizes="(max-width: 479px) 25px, 100vw" srcset="images/GFOTY-Bucks-p-500.jpeg 500w, images/GFOTY-Bucks-p-800.jpeg 800w, images/GFOTY-Bucks.jpg 896w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a7606652454d-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a7606652454d" class="div-easyfun-mobile">
+      <a href="easyfun.html" class="w-inline-block"><img src="images/EasyFUN-Be-Your-USA.jpg" loading="lazy" width="63" sizes="(max-width: 479px) 23px, 100vw" srcset="images/EasyFUN-Be-Your-USA-p-500.jpeg 500w, images/EasyFUN-Be-Your-USA-p-800.jpeg 800w, images/EasyFUN-Be-Your-USA.jpg 960w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524550-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524550" class="div-namasenda-mobile">
+      <a href="namasenda.html" class="w-inline-block"><img src="images/Namsenda-Wanted.jpg" loading="lazy" width="64" sizes="(max-width: 479px) 23px, 100vw" srcset="images/Namsenda-Wanted-p-500.jpeg 500w, images/Namsenda-Wanted-p-800.jpeg 800w, images/Namsenda-Wanted.jpg 1000w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524553-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524553" class="div-regina-mobile">
+      <a href="kyunchi.html" class="w-inline-block"><img src="images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica.jpg" loading="lazy" width="93" sizes="(max-width: 479px) 23px, 100vw" srcset="images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica-p-500.jpeg 500w, images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica-p-800.jpeg 800w, images/Kyunchi-Regina-George-That-Kid-Ayesha-Erotica.jpg 1000w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524556-bf2d3d7c" class="div-qt-mobile">
+      <a href="qt.html" class="w-inline-block"><img src="images/QT-Hey-QT.jpg" loading="lazy" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524559-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524559" class="div-planet-mobile">
+      <a href="planet-1999.html" class="w-inline-block"><img src="images/Planet-1999-Replay.jpg" loading="lazy" width="97" data-w-id="c0ff3e59-3737-115c-c996-a7606652455b" srcset="images/Planet-1999-Replay-p-500.jpeg 500w, images/Planet-1999-Replay-p-800.jpeg 800w, images/Planet-1999-Replay.jpg 1000w" sizes="(max-width: 479px) 23px, 100vw" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a7606652455c-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a7606652455c" class="div-charli-mobile">
+      <a href="charli-xcx.html" class="link-block-2 w-inline-block">
+        <div class="div-block-40"></div>
+      </a>
+      <a href="charli-xcx.html" class="w-inline-block"><img src="images/Charli-Charli.png" loading="lazy" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524561-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524561" class="div-sophie-mobile">
+      <a href="sophie.html" class="w-inline-block"><img src="images/Sophie-Immaterial.jpg" loading="lazy" width="97" sizes="(max-width: 479px) 23px, 100vw" srcset="images/Sophie-Immaterial-p-500.jpeg 500w, images/Sophie-Immaterial-p-800.jpeg 800w, images/Sophie-Immaterial.jpg 1000w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524564-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524564" class="div-liz-mobile">
+      <a href="liz.html" class="w-inline-block"><img src="images/LIZ-When-I-Rule-The-World.jpg" loading="lazy" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524567-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524567" class="div-slayyyter-mobile">
+      <a href="slayyyter.html" class="w-inline-block"><img src="images/Slayyyter-Mine.jpg" loading="lazy" width="66" sizes="(max-width: 479px) 23px, 100vw" srcset="images/Slayyyter-Mine-p-500.jpeg 500w, images/Slayyyter-Mine.jpg 640w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a7606652456a-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a7606652456a" class="div-shygirl-mobile">
+      <a href="shygirl.html" class="w-inline-block"><img src="images/Shygirl-SLIME.png" loading="lazy" width="121" sizes="(max-width: 479px) 23px, 100vw" srcset="images/Shygirl-SLIME-p-500.png 500w, images/Shygirl-SLIME-p-800.png 800w, images/Shygirl-SLIME.png 858w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a7606652456d-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a7606652456d" class="div-sega-mobile">
+      <a href="sega-bodega.html" class="w-inline-block"><img src="images/Sega-Bodega-Salvador.jpg" loading="lazy" width="105" sizes="(max-width: 479px) 23px, 100vw" srcset="images/Sega-Bodega-Salvador-p-500.jpeg 500w, images/Sega-Bodega-Salvador.jpg 600w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524570-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524570" class="div-oklou-mobile">
+      <a href="oklou.html" class="w-inline-block"><img src="images/Oklou-Unearth-Me.jpeg" loading="lazy" width="105" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524573-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524573" class="div-danny-mobile">
+      <a href="danny-l-harle.html" class="w-inline-block"><img src="images/Danny-Mountain.jpeg" loading="lazy" width="105" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524576-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524576" class="div-silver-mobile">
+      <a href="ag-cook.html" class="w-inline-block"><img src="images/A.G.-Cook-Silver.jpg" loading="lazy" width="158" sizes="(max-width: 479px) 23px, 100vw" srcset="images/A.G.-Cook-Silver-p-500.jpeg 500w, images/A.G.-Cook-Silver-p-800.jpeg 800w, images/A.G.-Cook-Silver.jpg 1000w" alt="" class="album-glow"></a>
+    </div>
+    <div id="w-node-c0ff3e59-3737-115c-c996-a76066524579-bf2d3d7c" data-w-id="c0ff3e59-3737-115c-c996-a76066524579" class="div-hannah-mobile">
+      <a href="hannah-diamond.html" class="w-inline-block"><img src="images/Hannah-Diamond-Reflections.png" loading="lazy" width="105" alt="" class="album-glow"></a>
+    </div>
+  </div>
+  <div style="display:none" class="song-info-gecs">
+    <div class="track-number">[04] Track</div>
+    <div class="title-of-song">MONEY MACHINE</div>
+    <div class="artist-name">100 Gecs</div>
+    <div class="genres-listed">Glitchy, Moody</div>
+    <div data-poster-url="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605174a1740ad7251f54ac32_100 Gecs_Short_1080p-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605174a1740ad7251f54ac32_100 Gecs_Short_1080p-transcode.mp4,https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605174a1740ad7251f54ac32_100 Gecs_Short_1080p-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605174a1740ad7251f54ac32_100 Gecs_Short_1080p-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605174a1740ad7251f54ac32_100 Gecs_Short_1080p-transcode.mp4" data-wf-ignore="true">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605174a1740ad7251f54ac32_100 Gecs_Short_1080p-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-sophie">
+    <div class="track-number">[03] Track</div>
+    <div class="title-of-song">FACESHOPPING</div>
+    <div class="artist-name">sophie</div>
+    <div class="genres-listed">Glitchy, Moody</div>
+    <div data-poster-url="videos/SOPHIE-poster-00001.jpg" data-video-urls="videos/SOPHIE-transcode.mp4,videos/SOPHIE-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/SOPHIE-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/SOPHIE-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/SOPHIE-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-charli-xcx">
+    <div class="track-number">[01] Track</div>
+    <div class="title-of-song">Claw</div>
+    <div class="artist-name">charli xcx</div>
+    <div class="genres-listed">Glitchy, Bubbly</div>
+    <div data-poster-url="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605177e92c05e751206484db_Charli XCX_Short_1080p-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605177e92c05e751206484db_Charli XCX_Short_1080p-transcode.mp4,https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605177e92c05e751206484db_Charli XCX_Short_1080p-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605177e92c05e751206484db_Charli XCX_Short_1080p-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605177e92c05e751206484db_Charli XCX_Short_1080p-transcode.mp4" data-wf-ignore="true">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/605177e92c05e751206484db_Charli XCX_Short_1080p-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-planet99">
+    <div class="track-number">[11] Track</div>
+    <div class="title-of-song">party</div>
+    <div class="artist-name">planet 1999</div>
+    <div class="genres-listed">Bubbly</div>
+    <div data-poster-url="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/604d23e7690126fde9cf072f_Planet 1999_Short-Vid-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/604d23e7690126fde9cf072f_Planet 1999_Short-Vid-transcode.mp4,https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/604d23e7690126fde9cf072f_Planet 1999_Short-Vid-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/604d23e7690126fde9cf072f_Planet 1999_Short-Vid-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/604d23e7690126fde9cf072f_Planet 1999_Short-Vid-transcode.mp4" data-wf-ignore="true">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/604d23e7690126fde9cf072f_Planet 1999_Short-Vid-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-namasenda">
+    <div class="track-number">[08] Track</div>
+    <div class="title-of-song">wanted</div>
+    <div class="artist-name">namasenda</div>
+    <div class="genres-listed">Glitchy, Bubbly</div>
+    <div data-poster-url="videos/08_Namasenda-poster-00001.jpg" data-video-urls="videos/08_Namasenda-transcode.mp4,videos/08_Namasenda-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/08_Namasenda-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/08_Namasenda-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/08_Namasenda-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-danny">
+    <div class="track-number">[17] Track</div>
+    <div class="title-of-song">on a mountain</div>
+    <div class="artist-name">danny l harle</div>
+    <div class="genres-listed">Glitchy, Bubbly, Glossy</div>
+    <div data-poster-url="videos/17_Danny-poster-00001.jpg" data-video-urls="videos/17_Danny-transcode.mp4,videos/17_Danny-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/17_Danny-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/17_Danny-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/17_Danny-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-easyfun">
+    <div class="track-number">[09] Track</div>
+    <div class="title-of-song">PARTY</div>
+    <div class="artist-name">EASYFUN, iiris</div>
+    <div class="genres-listed">Glitchy, Bubbly</div>
+    <div data-poster-url="videos/09_EASYFUN-poster-00001.jpg" data-video-urls="videos/09_EASYFUN-transcode.mp4,videos/09_EASYFUN-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/09_EASYFUN-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/09_EASYFUN-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/09_EASYFUN-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-rico">
+    <div class="track-number">[07] Track</div>
+    <div class="title-of-song">iphone</div>
+    <div class="artist-name">rico nasty</div>
+    <div class="genres-listed">Glitchy, Bubbly</div>
+    <div data-poster-url="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/60635a94b5526cced3d669f4_07_Rico Nasty-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/60635a94b5526cced3d669f4_07_Rico Nasty-transcode.mp4,https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/60635a94b5526cced3d669f4_07_Rico Nasty-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/60635a94b5526cced3d669f4_07_Rico Nasty-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/60635a94b5526cced3d669f4_07_Rico Nasty-transcode.mp4" data-wf-ignore="true">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/60635a94b5526cced3d669f4_07_Rico Nasty-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-cmten">
+    <div class="track-number">[06] Track</div>
+    <div class="title-of-song">never met!</div>
+    <div class="artist-name">cmten, glitch gum</div>
+    <div class="genres-listed">Glitchy</div>
+    <div data-poster-url="videos/06_CMTEN-poster-00001.jpg" data-video-urls="videos/06_CMTEN-transcode.mp4,videos/06_CMTEN-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/06_CMTEN-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/06_CMTEN-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/06_CMTEN-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-qt">
+    <div class="track-number">[10] Track</div>
+    <div class="title-of-song">HEY QT</div>
+    <div class="artist-name">QT</div>
+    <div class="genres-listed">Bubbly</div>
+    <div data-poster-url="videos/10_QT-poster-00001.jpg" data-video-urls="videos/10_QT-transcode.mp4,videos/10_QT-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/10_QT-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/10_QT-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/10_QT-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-silver">
+    <div class="track-number">[02] Track</div>
+    <div class="title-of-song">silver</div>
+    <div class="artist-name">ag cook</div>
+    <div class="genres-listed">Glitchy, Moody</div>
+    <div data-poster-url="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/6063594c0794e5042d0e3b53_02_AG Cook-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/6063594c0794e5042d0e3b53_02_AG Cook-transcode.mp4,https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/6063594c0794e5042d0e3b53_02_AG Cook-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/6063594c0794e5042d0e3b53_02_AG Cook-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/6063594c0794e5042d0e3b53_02_AG Cook-transcode.mp4" data-wf-ignore="true">
+        <source src="https://uploads-ssl.webflow.com/6048e4f9eb6b25b9d8ad487c/6063594c0794e5042d0e3b53_02_AG Cook-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-liz">
+    <div class="track-number">[12] Track</div>
+    <div class="title-of-song">WHEN I RULE THE WORLD</div>
+    <div class="artist-name">LIZ</div>
+    <div class="genres-listed">Bubbly, Glossy</div>
+    <div data-poster-url="videos/12_LIZ-poster-00001.jpg" data-video-urls="videos/12_LIZ-transcode.mp4,videos/12_LIZ-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/12_LIZ-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/12_LIZ-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/12_LIZ-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-slayyyter">
+    <div class="track-number">[13] Track</div>
+    <div class="title-of-song">mine</div>
+    <div class="artist-name">slayyyter</div>
+    <div class="genres-listed">Bubbly, Glossy</div>
+    <div data-poster-url="videos/13_Slayyyter-poster-00001.jpg" data-video-urls="videos/13_Slayyyter-transcode.mp4,videos/13_Slayyyter-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/13_Slayyyter-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/13_Slayyyter-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/13_Slayyyter-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-shygirl">
+    <div class="track-number">[15] Track</div>
+    <div class="title-of-song">slime</div>
+    <div class="artist-name">shygirl</div>
+    <div class="genres-listed">Glossy, Moody</div>
+    <div data-poster-url="videos/15_SHYGIRL-poster-00001.jpg" data-video-urls="videos/15_SHYGIRL-transcode.mp4,videos/15_SHYGIRL-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/15_SHYGIRL-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/15_SHYGIRL-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/15_SHYGIRL-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-hannah">
+    <div class="track-number">[16] Track</div>
+    <div class="title-of-song">hi</div>
+    <div class="artist-name">hannah diamond</div>
+    <div class="genres-listed">Glossy, Moody</div>
+    <div data-poster-url="videos/16_Hannah-Diamond-poster-00001.jpg" data-video-urls="videos/16_Hannah-Diamond-transcode.mp4,videos/16_Hannah-Diamond-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/16_Hannah-Diamond-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/16_Hannah-Diamond-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/16_Hannah-Diamond-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-regina">
+    <div class="track-number">[14] Track</div>
+    <div class="title-of-song">regina george</div>
+    <div class="artist-name">kyunchi, that kid, ayesha erotica</div>
+    <div class="genres-listed">Bubbly</div>
+    <div data-poster-url="videos/14_Regina--poster-00001.jpg" data-video-urls="videos/14_Regina--transcode.mp4,videos/14_Regina--transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/14_Regina--poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/14_Regina--transcode.mp4" data-wf-ignore="true">
+        <source src="videos/14_Regina--transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-oklou">
+    <div class="track-number">[19] Track</div>
+    <div class="title-of-song">UNEARTH ME</div>
+    <div class="artist-name">OKLOU</div>
+    <div class="genres-listed">Moody</div>
+    <div data-poster-url="videos/20_oklou-crop-poster-00001.jpg" data-video-urls="videos/20_oklou-crop-transcode.mp4,videos/20_oklou-crop-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/20_oklou-crop-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/20_oklou-crop-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/20_oklou-crop-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-sega">
+    <div class="track-number">[18] Track</div>
+    <div class="title-of-song">salv goes to hollywood</div>
+    <div class="artist-name">sega bodega</div>
+    <div class="genres-listed">Moody</div>
+    <div data-poster-url="videos/18_Sega-2-poster-00001.jpg" data-video-urls="videos/18_Sega-2-transcode.mp4,videos/18_Sega-2-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/18_Sega-2-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/18_Sega-2-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/18_Sega-2-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-p4rkr">
+    <div class="track-number">[21] Track</div>
+    <div class="title-of-song">ok im cool</div>
+    <div class="artist-name">p4rkr, blackwinterwells</div>
+    <div class="genres-listed">Moody, Glitchy</div>
+    <div data-poster-url="videos/21_P4rkr-poster-00001.jpg" data-video-urls="videos/21_P4rkr-transcode.mp4,videos/21_P4rkr-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/21_P4rkr-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/21_P4rkr-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/21_P4rkr-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-glaive">
+    <div class="track-number">[20] Track</div>
+    <div class="title-of-song">pissed</div>
+    <div class="artist-name">glaive</div>
+    <div class="genres-listed">Moody, Glitchy</div>
+    <div data-poster-url="videos/20_Pissed-crop-yesy-poster-00001.jpg" data-video-urls="videos/20_Pissed-crop-yesy-transcode.mp4,videos/20_Pissed-crop-yesy-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/20_Pissed-crop-yesy-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/20_Pissed-crop-yesy-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/20_Pissed-crop-yesy-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div style="display:none" class="song-info-gfoty">
+    <div class="track-number">[05] Track</div>
+    <div class="title-of-song">poison</div>
+    <div class="artist-name">gfoty</div>
+    <div class="genres-listed">Moody, Glitchy</div>
+    <div data-poster-url="videos/05_GFOTY-poster-00001.jpg" data-video-urls="videos/05_GFOTY-transcode.mp4,videos/05_GFOTY-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="vid-preview w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/05_GFOTY-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+        <source src="videos/05_GFOTY-transcode.mp4" data-wf-ignore="true">
+        <source src="videos/05_GFOTY-transcode.webm" data-wf-ignore="true">
+      </video></div>
+  </div>
+  <div data-w-id="355f84bb-7354-cb41-b3b9-755208746bc9" style="display:none" class="glitchy-info-hover">
+    <div class="text-block-5">GLITCHY</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that sound jarring and sharp with pitched vocals, distorted sounds, and sped-up vocals.</p>
+  </div>
+  <div data-w-id="b9e3415a-c642-4746-9742-bbbc830db5a8" style="display:none" class="glitchy-info-hover-mobile">
+    <div class="text-block-5">GLITCHY</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that sound jarring and sharp with pitched vocals, distorted sounds, and sped-up vocals.</p>
+  </div>
+  <div data-w-id="65cc9dd6-fe14-3698-017c-981a862ca672" style="display:none" class="bubbly-info-hover">
+    <div class="text-block-5">bubbly</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that are bright, cutesy, and upbeat. These tracks are often turbo-charged, future facing pop tracks.<br></p>
+  </div>
+  <div data-w-id="0051d7f7-e29a-fce4-aac9-c119393aef7c" style="display:none" class="bubbly-info-hover-mobile">
+    <div class="text-block-5">bubbly</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that are bright, cutesy, and upbeat. These tracks are often turbo-charged, future facing pop tracks.<br></p>
+  </div>
+  <div data-w-id="4b130aa2-2d3b-ed0f-8eaa-edb2a38f2a2c" style="display:none" class="glossy-info-hover">
+    <div class="text-block-5">GLOSSY</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that sound smoother with few abrupt sounds. These have fewer distortions and draw on more traditional pop or R&amp;B sounds.<br></p>
+  </div>
+  <div data-w-id="c1fe87ec-180c-42d0-a7b7-6bef1ee5e0d9" style="display:none" class="glossy-info-hover-mobile">
+    <div class="text-block-5">GLOSSY</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that sound smoother with few abrupt sounds. These have fewer distortions and draw on more traditional pop or R&amp;B sounds.<br></p>
+  </div>
+  <div data-w-id="cce61a5e-9201-63ac-4d26-acb8b02da33a" style="display:none" class="moody-info-hover">
+    <div class="text-block-5">moody</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that are more emotional, have an attitude, and/or infused with “emo” sentiments in its lyrics.<br></p>
+  </div>
+  <div data-w-id="814f4232-2fe6-642d-4d18-638ef2552574" style="display:none" class="moody-info-hover-mobile">
+    <div class="text-block-5">moody</div>
+    <div class="category">Category</div>
+    <p class="paragraph-sml">Refers to songs that are more emotional, have an attitude, and/or infused with “emo” sentiments in its lyrics.<br></p>
+  </div>
+  <div data-w-id="6ef24e51-00cf-adec-eeb9-b35d2434bd00" style="display:none" class="overlay-mobile-genre"></div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6048e4f9eb6b25b9d8ad487c" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+
+  <script src="js/audio.js" defer></script>
+ <!--  </head>  
+  <body> -->
+    <audio id="ClawsClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FCharli%20XCX%2C%20Claws.mp3?v=1619016771524" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="AGCookClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FAG%20Cook%2C%20Silver.mp3?v=1619016767390" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="SOPHIEClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FSOPHIE%2C%20Faceshopping.mp3?v=1619016881601" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="GecsClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2F100%20gecs%2C%20money%20machine.mp3?v=1619015193478" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="GFOTYClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FGFOTY%2C%20Poison.mp3?v=1619016784604" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="CMTENClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FCMTEN%2C%20NEVER%20MET!.mp3?v=1619016775555" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="RicoClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FRico%20Nasty%2C%20IPHONE.mp3?v=1619016855903" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="NamasendaClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FNamasenda%2C%20Wanted.mp3?v=1619048923237" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="EASYFUNClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FEASYFUN%2C%20Be%20Your%20USA.mp3?v=1619048928038" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="QTClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FQT%2C%20Hey%20QT.mp3?v=1619016842105" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="PlanetClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FPlanet%201999%2C%20Party.mp3?v=1619016837848" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="LIZClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FLIZ%2C%20When%20I%20Rule%20the%20World.mp3?v=1619016808857" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="SlayyyterClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FSlayyyter%2C%20Mine.mp3?v=1619016873966" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+  <audio id="KyunchiClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FKyunchi%2C%20Regina%20George.mp3?v=1619016805171" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="ShygirlClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FShygirl%2C%20SLIME.mp3?v=1619016867558" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="SegaClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FSega%2C%20Salv%20Goes%20to%20Hollywood.mp3?v=1619016861913" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="HannahClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FHannah%20Diamond%2C%20HI.mp3?v=1619016802496" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="DannyClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FDJ%20Danny%2C%20On%20A%20Mountain.mp3?v=1619016779702" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="OklouClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FOklou%2C%20Unearth%20Me.mp3?v=1619016819612" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="P4rkrClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FP4rkr%2C%20Ok%20I'm%20Cool.mp3?v=1619016832240" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+    <audio id="GlaiveClip" src="https://cdn.glitch.com/c90414a1-d6f8-41ef-b230-b3e76c77baa3%2FGlaive%2C%20Pissed.mp3?v=1619016788043" preload="auto">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+
+
+
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
