@@ -1828,8 +1828,8 @@ li {
   max-width: 20vw;
   margin-top: -4px;
   margin-bottom: -3px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 3px;
+  padding-bottom: 20px;
   font-family: 'Favorit Trial', sans-serif;
   font-size: 18px;
   font-weight: 300;
